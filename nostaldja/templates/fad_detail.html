@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div>
+    <h2>
+      <a href="/decades/{{fad.decade.id}}"> {{fad.decade.time}} </a>
+    </h2>
+    <p> {{fad.title}} </p>
+    <p> {{fad.description}} </p>
+    <a href="/fads/{{fad.id}}/edit"> Edit {{fad.title}} </a>
+  </div>
+
+  <form action="/fads/{{fad.id}}/delete" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Delete {{fad.name}}">
+  </form>
+{% endblock %}

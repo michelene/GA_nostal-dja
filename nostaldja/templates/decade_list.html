@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for decade in decades %}
+  <div>
+    <h2>
+      <a href="/decades/{{decade.id}}">{{decade.time}}</a>
+    </h2>
+  </div>
+  {% endfor %}
+{% endblock %}

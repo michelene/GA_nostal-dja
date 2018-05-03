@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div>
+    <h2>
+      <a href="/decades/{{decade.id}}">{{decade.time}}</a>
+    </h2>
+    {% for fad in decade.fads.all %}
+    <div>
+      <a href="/fads/{{fad.id}}"> {{fad.title}} </a>
+      <p> {{fad.description}} </p>
+    </div>
+    {% endfor %}  
+  </div>
+{% endblock %}
