@@ -18,6 +18,8 @@ Read through the setup instructions from the Django [Models](https://git.general
 
 ## Models
 
+A `Decade` will have `Fad`s, or in other words a fad will have a foreign key for a decade.
+
 * Decades
   * start_year
 * Fads
