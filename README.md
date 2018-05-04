@@ -28,11 +28,13 @@ Read through the setup instructions from the Django [Models](https://git.general
 
 ## Seeding
 
-***After*** you've run `makemigrations` and `migrate`, you can then run the following to create a new, empty migration
+***After*** you've run `makemigrations` and `migrate`, you can then run the following to create a new, empty migration...
 
 ```sh
  $ python manage.py makemigrations --empty nostaldja
 ```
+
+Then, paste into the newly generated file the code below...
 
 ```py
 from django.db import migrations
@@ -64,16 +66,20 @@ def fallow(apps, schema_editor):
     Decade = apps.get_model('nostaldja', 'Decade')
     Decade.objects.all().delete()
     Fad.objects.all().delete()
+```
 
+Then below, add only the line highlighted in green...
+
+```diff
 class Migration(migrations.Migration):
 
-
+    
     dependencies = [
         ('nostaldja', '0006_auto_20180504_1246'),
     ]
 
     operations = [
-        migrations.RunPython(seed, fallow)
++       migrations.RunPython(seed, fallow)
     ]
 
 ```
