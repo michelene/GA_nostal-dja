@@ -131,17 +131,6 @@ Aside from the base/layout template, you'll want templates like:
 | Decade | Display detail |
 | Decade | Edit detail |
 
-## Bonus
-
-Bonuses are described after the requirements, if included. They should be worked
-on **only after** passing requirements.
-
-Less experienced students should be able to complete the base requirements in
-the alloted time for labs and in around 2 hours for homework; more experienced
-students should be to complete the bonus.
-
-Sometimes, we ask questions that promote thinking critically about code.
-
 ## Plagiarism
 
 Take a moment to refamiliarize yourself with the [Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md). Plagiarized work will not be accepted.
