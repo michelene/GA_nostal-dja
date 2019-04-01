@@ -50,11 +50,16 @@ A `Decade` will have `Fad`s, or in other words a fad will have a foreign key for
 
 ### Seeding
 
+To seed your database with some initial data, you'll need to create a [data
+migration](https://docs.djangoproject.com/en/2.1/topics/migrations/#data-migrations).
+Read the documentation on data migrations first, then **carefully** follow the
+instructions below.
+
 ***After*** you've run `makemigrations` and `migrate`, you can then run the
 following to create a new, empty migration:
 
 ```sh
- $ python manage.py makemigrations --empty nostaldja
+python manage.py makemigrations --empty nostaldja
 ```
 
 Then, paste into the newly generated file the code below:
@@ -93,7 +98,7 @@ Then below, add only the line highlighted in green:
 ```diff
 class Migration(migrations.Migration):
 
-    
+
     dependencies = [
         ('nostaldja', '0006_auto_20180504_1246'),
     ]
