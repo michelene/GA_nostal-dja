@@ -6,9 +6,9 @@ Nostaldja is an app for tracking fads across decades.
 
 ## Prerequisites
 
-* Python
-* Django
-* Virtual environments
+- Python
+- Django
+- Virtual environments
 
 ## Instructions
 
@@ -24,8 +24,7 @@ Please turn in your submission by the deadline on your cohort calendar.
 
 Read through the setup instructions from the Django
 [Models](https://git.generalassemb.ly/dc-wdi-python-django/django-models) and
-[Views and
-Templates](https://git.generalassemb.ly/dc-wdi-python-django/django-views-and-templates)
+[Views and Templates](https://git.generalassemb.ly/dc-wdi-python-django/django-views-and-templates)
 
 The goal of this app is to have a full-CRUD application with multiple views.
 
@@ -38,24 +37,25 @@ called `nostaldja`. You'll need to create a new psql database for your app.
 
 Create two models: `Decade` and `Fad`.
 
-A `Decade` will have `Fad`s, or in other words a fad will have a foreign key for a decade.
+A `Decade` will have `Fad`s, or in other words a fad will have a foreign key for
+a decade.
 
-* Decades
-  * start_year
-* Fads
-  * name
-  * image_url
-  * description
-  * decade
+- Decades
+  - start_year
+- Fads
+  - name
+  - image_url
+  - description
+  - decade
 
 ### Seeding
 
-To seed your database with some initial data, you'll need to create a [data
-migration](https://docs.djangoproject.com/en/2.1/topics/migrations/#data-migrations).
+To seed your database with some initial data, you'll need to create a
+[data migration](https://docs.djangoproject.com/en/2.1/topics/migrations/#data-migrations).
 Read the documentation on data migrations first, then **carefully** follow the
 instructions below.
 
-***After*** you've run `makemigrations` and `migrate`, you can then run the
+**_After_** you've run `makemigrations` and `migrate`, you can then run the
 following to create a new, empty migration:
 
 ```sh
@@ -127,18 +127,57 @@ Using your URLs and view functions, also build out some templates!
 
 Aside from the base/layout template, you'll want templates like:
 
-| Resource | Action |
-|---------|-------|
-| Fad | Display all |
-| Fad | Display detail |
-| Fad | Edit detail |
-| Decade | Display all |
-| Decade | Display detail |
-| Decade | Edit detail |
+| Resource | Action         |
+| -------- | -------------- |
+| Fad      | Display all    |
+| Fad      | Display detail |
+| Fad      | Edit detail    |
+| Decade   | Display all    |
+| Decade   | Display detail |
+| Decade   | Edit detail    |
+
+## Bonus
+
+Implement at least one of the following bonus options by working through the
+appropriate section of the Django documentation as well as by doing your own
+research.
+
+### [Image Uploads](https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/)
+
+Add an `image` property to the `Fad` model and read through the documentation on
+handling
+[file uploads](https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/).
+
+### [Class-based Views](https://docs.djangoproject.com/en/2.2/topics/class-based-views/)
+
+The views we've been writing have been functions, but Django provides the
+ability to define views as Python classes. Read through the documentation on
+[Class-based views](https://docs.djangoproject.com/en/2.2/topics/class-based-views/).
+
+### [Testing](https://docs.djangoproject.com/en/2.2/topics/testing/)
+
+Unit testing is a great way of making sure your code works the way you expect it
+to. Read through the documentation on
+[testing Django](https://docs.djangoproject.com/en/2.2/topics/testing/) and add
+tests to your application.
+
+### [Deployment](https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/)
+
+How great would it be if you could deploy your app for others to use? Read
+through the documentation on
+[deploying Django](https://docs.djangoproject.com/en/2.2/howto/deployment/) and
+get your application out there.
+
+> Note: If you pick deployment cause you think it's going to be easy (you've
+> already done it before) then you may be in for a surprise. That's not to say
+> that deploying Django applications is especially hard! Just that it wont
+> necessarily be easier.
 
 ## Plagiarism
 
-Take a moment to refamiliarize yourself with the [Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md). Plagiarized work will not be accepted.
+Take a moment to refamiliarize yourself with the
+[Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md).
+Plagiarized work will not be accepted.
 
 ## [License](LICENSE)
 
