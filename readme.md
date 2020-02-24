@@ -18,7 +18,7 @@ Nostaldja is an app for tracking fads across decades.
 1. Install dependencies.
 1. Fulfill the listed requirements.
 
-Please turn in your submission by the deadline on your cohort calendar.
+You're encouraged to work in pairs for this lab. Submission is NOT required for this lab.
 
 ## Setup
 
