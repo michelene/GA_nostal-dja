@@ -142,6 +142,19 @@ Implement at least one of the following bonus options by working through the
 appropriate section of the Django documentation as well as by doing your own
 research.
 
+### Social Authentication
+
+Now that we have a basic authentication setup in place, let's expand on it so
+that users can sign in using their favorite social media app.
+
+Social Authentication is using social media platforms (like Facebook and
+Twitter) for your authentication. For the remainder of class, work on getting
+social authentication working in tunr using
+[`social-auth-app-django`](https://github.com/python-social-auth/social-app-django).
+
+Use the [documentation](http://python-social-auth.readthedocs.io/en/latest/) or
+[this walkthrough](https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html).
+
 ### [Image Uploads](https://docs.djangoproject.com/en/2.2/topics/http/file-uploads/)
 
 Add an `image` property to the `Fad` model and read through the documentation on
