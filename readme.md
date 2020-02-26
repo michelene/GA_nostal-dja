@@ -144,8 +144,7 @@ research.
 
 ### Social Authentication
 
-Now that we have a basic authentication setup in place, let's expand on it so
-that users can sign in using their favorite social media app.
+Let's allow users to sign in using their favorite social media app.
 
 Social Authentication is using social media platforms (like Facebook and
 Twitter) for your authentication. For the remainder of class, work on getting
