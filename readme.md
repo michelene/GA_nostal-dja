@@ -148,7 +148,7 @@ Let's allow users to sign in using their favorite social media app.
 
 Social Authentication is using social media platforms (like Facebook and
 Twitter) for your authentication. For the remainder of class, work on getting
-social authentication working in tunr using
+social authentication working (just pick 1 social platform you'd like to use for authentication) using
 [`social-auth-app-django`](https://github.com/python-social-auth/social-app-django).
 
 Use the [documentation](http://python-social-auth.readthedocs.io/en/latest/) or
