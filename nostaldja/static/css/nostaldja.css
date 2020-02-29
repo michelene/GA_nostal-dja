@@ -96,3 +96,8 @@ a.no-fav {
 .no-fav:visited {
   text-decoration: none;
 }
+
+img {
+  max-width: 60%;
+  max-height: 60%;
+}
